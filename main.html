@@ -10,6 +10,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.scss" />
 
     <!-- add icon link -->
     <link rel="icon" src="./images/Logo.png" type="image/x-icon">
@@ -76,14 +77,78 @@
         </p>
         <p>
             <b>We invite you to join us on this innovative and exciting journey towards becoming Animal Amigos and
-                giving
-                our animals a better living environment</b>. Please enjoy our little game and learn more about our
-            product and
-            team member formation on this web app. <b>Together, let's work towards a more sustainable future!</b>
+                giving our animals a better living environment</b>. Please enjoy our little game and learn more about our
+            product and team member formation on this web app. <b>Together, let's work towards a more sustainable future!</b>
         </p>
     </div>
 
     <hr>
+
+    <!-- Star of Carbon Footprint Calculator -->
+    <div class="container">
+        <center>
+            <h1 style="color: #239B56; margin-bottom: 30px;">
+                Calculate Your Personal Carbon Footprint
+            </h1>
+        </center>
+        <div class="row">
+            <!-- Slide Up Input Refer to https://codepen.io/MichaelArestad/pen/npdvJY -->
+            <!--             
+            <span> <input class="slide-up" id="card" type="text" placeholder="Fund me!" /><label for="card">Credit Card</label> </span> 
+            <span> <input class="slide-up" id="expires" type="text" placeholder="Month Day, Year" /><label for="expires">Expires</label> </span> 
+            <span> <input class="slide-up" id="security" type="text" placeholder="Public" /><label for="security">Security Code</label> </span> 
+            -->
+            <div class="col">
+                <input type="text" class="form-control" id="resourceIcon_water" placeholder="Water (Dollar)" aria-label="Water">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Electricity (Dollar)" aria-label="Electricity">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Transportation (Miles)" aria-label="Transportation">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Fuel (Dollar)" aria-label="Fuel">
+            </div>
+        </div>
+        <!-- Auto-shown Calculator -->
+        <!-- <div class="container" style=" margin-top: 30px">
+            <div class="row justify-content-md-center">
+                <div class="col-3">
+                    <div style="padding: 10px; height: 50px; width: fit-content; color: white; font-size: large; background-color:#239B56; border-radius: 25px;">
+                        Total Carbom Footprint </div>
+                </div>
+                <div class="col-2">
+                    <div style="padding: 10px; height: 50px; width: fit-content; color: #239B56; font-size: large; font border: #239B56 solid 1px; border-radius: 25px;">
+                        <b>0 lbs</b>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <center>
+            <button type="button" id="reportSubmit" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#reportModal">Submit</button>
+        </center>
+
+        <!-- Start of Report Modal -->
+        <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Which Phase are you At</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img src="images/report.png">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success">Share It!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Report Modal -->
+    </div>
+    </div>
+    <hr>
+    <!-- End of Carbon Footprint Calculator -->
 
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" type="text/css" rel="stylesheet"> -->
 
